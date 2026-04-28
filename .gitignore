@@ -2,6 +2,24 @@ trabalho_1/data_heri/
 *.tar.gz
 env/
 
+# Pastas de dados que você criou (onde estão as imagens pesadas)
+
+data_heri_2/
+
+# Arquivos de dataset compactados
+*.zip
+*.tar.gz
+
+# Qualquer arquivo de modelo/pesos que possa ser gerado (extensões comuns)
+*.pth
+*.h5
+*.pkl
+
+# Pastas de cache e checkpoints do sistema
+__pycache__/
+.ipynb_checkpoints/
+venv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
