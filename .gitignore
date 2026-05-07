@@ -1,10 +1,38 @@
-trabalho_1/data_heri/
-*.tar.gz
+
+
+# Ignora pastas de ambiente e dados
 env/
-
-# Pastas de dados que você criou (onde estão as imagens pesadas)
-
+data/
 data_heri_2/
+*.tar.gz
+
+# --- REGRA PARA A PASTA TRABALHO_2 ---
+# Ignora absolutamente tudo dentro dela
+trabalho_2/*
+
+# Abre exceção APENAS para arquivos de notebook
+!trabalho_2/*.ipynb
+
+# Bloqueio global de arquivos de peso (garantia extra)
+*.pt
+*.pth
+
+# Ignora pastas de ambiente e dados na raiz
+env/
+data/
+data_heri_2/
+*.tar.gz
+
+# --- REGRA PARA A PASTA trabalho_2 ---
+# 1. Ignora tudo dentro dela
+trabalho_2/*
+
+# 2. Abre uma exceção para não ignorar os arquivos .ipynb
+!trabalho_2/*.ipynb
+
+# 3. Garante que subpastas pesadas dentro dela continuem ignoradas
+trabalho_2/*/
+
 
 # Arquivos de dataset compactados
 *.zip
